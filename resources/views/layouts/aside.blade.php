@@ -26,7 +26,7 @@ class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 bg-secondary ove
             class="ml-3 transition duration-200" 
             :class="linkHover ? 'text-gray-100' : ''"
         >
-            Dashboard 2
+            Home
         </span>
     </a>
     <!-- end::Menu link -->
