@@ -1,10 +1,10 @@
-@section('title', 'Crear cliente')
+<?php $__env->startSection('title', 'Crear cliente'); ?>
 
-@extends('layouts.dash')
 
-@section('content')
-<form action="{{ route('clients.store') }}" method="POST">
-    @csrf
+
+<?php $__env->startSection('content'); ?>
+<form action="<?php echo e(route('clients.store')); ?>" method="POST">
+    <?php echo csrf_field(); ?>
 <div class="bg-white p-4 grid grid-cols-2 gap-8 rounded-lg shadow-xl py-8 mt-12">
     
     <!-- start:: Horizontal Form Layout -->
@@ -67,5 +67,7 @@
     
 </div>
 </form>
-@endsection
+<?php $__env->stopSection(); ?>
 
+
+<?php echo $__env->make('layouts.dash', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\laravel\resources\views/dashboard/client/create.blade.php ENDPATH**/ ?>

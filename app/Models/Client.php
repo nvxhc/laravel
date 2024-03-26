@@ -22,4 +22,9 @@ class Client extends Model
     {
         return $this->belongsTo(Sector::class);
     }
+    public function scopeSearch($query, $searchTerm)
+    {
+        return $query->where('name', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('DNI', 'like', '%' . $searchTerm . '%');
+    }
 }

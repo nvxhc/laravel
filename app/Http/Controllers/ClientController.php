@@ -11,6 +11,17 @@ class ClientController extends Controller
 
         return view('dashboard.client.create');
     }
+    public function edit(Client $client){
+
+        return view('dashboard.client.edit', compact('client'));
+    }
+    public function update(Request $request, Client $client){
+
+        $client->update($request->all());
+
+        return redirect()->route('clients.index');
+    }
+    
     public function store(Request $request)
     {
         Client::create($request->all());
