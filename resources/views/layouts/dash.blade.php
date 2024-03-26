@@ -34,8 +34,9 @@
                 <!-- end::Topbar -->
 
                 <!-- start:Page content -->
+                <div class="h-full bg-gray-200 p-8">
                 @yield('content')    
-
+                </div>
                 <!-- end:Page content -->
             </div>
         </div>

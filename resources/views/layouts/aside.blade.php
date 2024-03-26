@@ -100,6 +100,10 @@ class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 bg-secondary ove
     <!-- end::Menu link -->
 
     <!-- start::Menu link -->
+    <x-dropdown.dropdown name="Cliente">
+        <x-dropdown.dropdown2 name="Nuevo cliente" href="{{route('clients.create')}}"/>
+        <x-dropdown.dropdown2 name="Lista de cliente" href="{{route('clients.index')}}" />
+    </x-dropdown.dropdown>
     <div
         x-data="{ linkHover: false, linkActive: false }"
     >
