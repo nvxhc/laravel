@@ -1,4 +1,4 @@
-<div x-data="{ filter: false, basicInfoModal: false }" class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar">
+<div x-data="{ filter: false }" class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar">
     <h4 class="text-xl font-semibold">Advance Table Filters</h4>
     <div class="mt-8 mb-3 flex flex-col md:flex-row items-start md:items-center md:justify-between">
         <div class="flex items-center justify-center space-x-4">
@@ -134,13 +134,5 @@
 
         </tbody>
     </table>
-    
-    <div x-show="basicInfoModal" x-transition.opacity="" x-transition:enter.duration.100ms="" x-transition:leave.duration.300ms="" class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center" style="display: none;">
-        <div @click.away="basicInfoModal = false" class="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 bg-white p-10 rounded-lg shadow-xl">
-            <span @click="basicInfoModal = false" class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" title="Close">
-                ✕
-            </span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-        </div>
-    </div>
+
 </div><?php /**PATH C:\xampp\htdocs\laravel\resources\views/livewire/client-table.blade.php ENDPATH**/ ?>
